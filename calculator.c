@@ -32,21 +32,33 @@ int main(int argc, char **argv) {
   scanf("%d", &choice);
 
   if(choice == 1) {
-    printf("%lf", a + b);
-  } else if(choice == 2) {
+    printf("\n%.2lf + %.2lf = %.2lf",a,b, a + b);
+  }
+
+  else if(choice == 2) {
     result = a - b;
-    printf("%lf", result);
-  } else if(choice == 3) {
+    printf("\n%.2lf - %.2lf = %.2lf",a,b, result);
+  } 
+  
+  else if(choice == 3) {
      result = a*b;
-     printf("%lf",result);
+     printf("\n%.2lf * %.2lf = %.2lf",a,b,result);
   } 
 
   else if(choice == 4) {
-    //TODO: handle this case (division)
+    if(b==0){
+      printf("\nERROR. (division by zero is not defined)");
+    }
+    else{
+      result = a/b;
+      printf("\n%2lf / %.2lf = %.2lf",a,b,result);
+    }
   } 
   
   else if(choice == 5) {
-    //TODO: handle this case (minimum)
+    if(a>b){
+      printf("%.2lf is greator",a);
+    }
   }
   
    else if(choice == 6) {
