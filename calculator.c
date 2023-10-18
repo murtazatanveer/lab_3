@@ -71,9 +71,17 @@ int main(int argc, char **argv) {
   }
   
    else if(choice == 6) {
+
     if (a>0 && b>0){
 
   result = log(b)/log(a);
+  printf("log %.2lf / log %.2lf = %.3lf",b,a,result);
+
+  }
+
+  else{
+
+    
   }
 
   else{
