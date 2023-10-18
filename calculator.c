@@ -32,20 +32,29 @@ int main(int argc, char **argv) {
   scanf("%d", &choice);
 
   if(choice == 1) {
-    printf("%f", a + b);
+    printf("%lf", a + b);
   } else if(choice == 2) {
     result = a - b;
-    printf("%f", result);
+    printf("%lf", result);
   } else if(choice == 3) {
-    //TODO: handle this case (multiplication)
-  } else if(choice == 4) {
+     result = a*b;
+     printf("%lf",result);
+  } 
+
+  else if(choice == 4) {
     //TODO: handle this case (division)
-  } else if(choice == 5) {
+  } 
+  
+  else if(choice == 5) {
     //TODO: handle this case (minimum)
-  } else if(choice == 6) {
+  }
+  
+   else if(choice == 6) {
     //TODO: handle this case (log_a(b))
-  } else {
-    printf("Please input a valid operator next time");
+  } 
+  
+  else {
+    printf("\nPlease input a valid operator next time");
   }
 
   return 0;
