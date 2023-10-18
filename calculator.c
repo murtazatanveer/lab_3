@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main(int argc, char **argv) {
+int main() {
 
   double a, b, result;
   int choice;
@@ -70,7 +70,7 @@ int main(int argc, char **argv) {
     }
   }
   
-   else if(choice == 6) {
+  /* else if(choice == 6) {
 
     if (a>0 && b>0){
 
@@ -79,16 +79,15 @@ int main(int argc, char **argv) {
 
   }
 
-  else{
-
-    
-  }
+  
 
   else{
-    printf("\nERROR! Please Enter Positive Operands")
+
+    printf("\nERROR! Please Enter Positive Operands");
+
   }
 
-  } 
+  } */
   
   else {
     printf("\nPlease input a valid operator next time");
