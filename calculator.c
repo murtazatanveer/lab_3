@@ -71,7 +71,15 @@ int main(int argc, char **argv) {
   }
   
    else if(choice == 6) {
-    //TODO: handle this case (log_a(b))
+    if (a>0 && b>0){
+
+  result = log(b)/log(a);
+  }
+
+  else{
+    printf("\nERROR! Please Enter Positive Operands")
+  }
+
   } 
   
   else {
