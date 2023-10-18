@@ -51,7 +51,7 @@ int main() {
     }
     else{
       result = a/b;
-      printf("\n%2lf / %.2lf = %.2lf",a,b,result);
+      printf("\n%.2lf / %.2lf = %.2lf",a,b,result);
     }
   } 
   
@@ -70,7 +70,7 @@ int main() {
     }
   }
   
-  /* else if(choice == 6) {
+   else if(choice == 6) {
 
     if (a>0 && b>0){
 
@@ -87,7 +87,7 @@ int main() {
 
   }
 
-  } */
+  } 
   
   else {
     printf("\nPlease input a valid operator next time");
