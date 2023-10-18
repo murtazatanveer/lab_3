@@ -57,7 +57,16 @@ int main(int argc, char **argv) {
   
   else if(choice == 5) {
     if(a>b){
-      printf("%.2lf is greator",a);
+      printf(" \n%.2lf is minimum ",b);
+    }
+    else if(a<b){
+    
+    printf(" \n%.2lf is minimum ",a);
+
+    }
+
+    else{
+      printf(" \nBoth %.2lf and %.2lf are equal ",a,b);
     }
   }
   
