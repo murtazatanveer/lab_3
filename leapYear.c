@@ -73,6 +73,17 @@ int main(int argc, char **argv) {
     numPassed = numPassed + 1;
   }
 
+
+  year = 2012;
+  printf("Test Case 3: year = %d: ", year);
+  if(isLeapYear(year)) {
+    printf("FAILED!\n");
+    numFailed = numFailed + 1;
+  } else {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
+  }
+
   printf("\n\n");
   printf("Summary:\n");
   printf("Number of test cases passed: %d\n", numPassed);
