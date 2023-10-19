@@ -21,6 +21,11 @@ int main(int argc, char **argv) {
     reportPass = true;
   }
 
+  // i added it
+
+  int y;
+  y= atoi(argv[1]);
+
   int year;
   int numPassed = 0;
   int numFailed = 0;
@@ -166,6 +171,10 @@ year = 2004;
 }
 
 int isLeapYear(int year) {
+
+
+
+
   //TODO: Write your logic here
   //      The year is stored in the variable year
   //      Your function should return true (1) if it represents a leap year
