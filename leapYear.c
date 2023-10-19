@@ -38,7 +38,18 @@ int main(int argc, char **argv) {
     printf("PASSED!\n");
     numPassed = numPassed + 1;
   }
+// the above logic of leap year is correct 
+//below two logics (test case 2 and test case 3 is incorrect)
+/*after copying the above logic i find correct answers the cases below i commented is incorrect because
+it is logic of test case 2 which is incorrect
 
+output
+
+Test Case 1: year = 2012: PASSED!
+Test Case 1: year = 2008: PASSED!
+Test Case 1: year = 2004: PASSED!
+
+*/
   year = 2001;
   printf("Test Case 2: year = %d: ", year);
   if(isLeapYear(year)) {
@@ -64,7 +75,7 @@ int main(int argc, char **argv) {
 
 
   /*year = 4000;
-  printf("Test Case 3: year = %d: ", year);
+  printf("Test Case x: year = %d: ", year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
@@ -75,7 +86,7 @@ int main(int argc, char **argv) {
 
 
   year = 6000;
-  printf("Test Case 3: year = %d: ", year);
+  printf("Test Case y: year = %d: ", year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
@@ -86,7 +97,7 @@ int main(int argc, char **argv) {
 
 
   year = 8000;
-  printf("Test Case 3: year = %d: ", year);
+  printf("Test Case z: year = %d: ", year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
@@ -106,7 +117,36 @@ year = 10000;
     numPassed = numPassed + 1;
   }*/
 
-  
+year = 2012;
+  printf("Test Case 4: year = %d: ", year);
+  if(!isLeapYear(year)) {
+    printf("FAILED!\n");
+    numFailed = numFailed + 1;
+  } else {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
+  }
+
+year = 2008;
+  printf("Test Case 5: year = %d: ", year);
+  if(!isLeapYear(year)) {
+    printf("FAILED!\n");
+    numFailed = numFailed + 1;
+  } else {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
+  }
+
+year = 2004;
+  printf("Test Case 6: year = %d: ", year);
+  if(!isLeapYear(year)) {
+    printf("FAILED!\n");
+    numFailed = numFailed + 1;
+  } else {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
+  }
+
 
 
   printf("\n\n");
