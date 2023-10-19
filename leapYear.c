@@ -23,10 +23,11 @@ int main(int argc, char **argv) {
 
   // i added it
 
-  int y;
-  y= atoi(argv[1]);
-
   int year;
+
+  year = atoi(argv[1]);
+
+
   int numPassed = 0;
   int numFailed = 0;
 
@@ -171,9 +172,15 @@ year = 2004;
 }
 
 int isLeapYear(int year) {
+// give input in command line arguement
 
+ if((year % 4==0 && year % 100 != 0 ) || (year % 400 == 0) ){
 
-
+  true(1);
+ }
+ else{
+  false(0);
+ }
 
   //TODO: Write your logic here
   //      The year is stored in the variable year
