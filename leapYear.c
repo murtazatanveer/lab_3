@@ -21,13 +21,12 @@ int main(int argc, char **argv) {
     reportPass = true;
   }
 
-  // i added it
+  
+
+
+
 
   int year;
-
-  year = atoi(argv[1]);
-
-
   int numPassed = 0;
   int numFailed = 0;
 
@@ -35,29 +34,9 @@ int main(int argc, char **argv) {
   //Do not change these, add your own test cases
   //below.  All test cases should pass.
 
-  year = 2000;
-  printf("Test Case 1: year = %d: ", year);
-  if(!isLeapYear(year)) {
-    printf("FAILED!\n");
-    numFailed = numFailed + 1;
-  } else {
-    printf("PASSED!\n");
-    numPassed = numPassed + 1;
-  }
-// the above logic of leap year is correct 
-//below two logics (test case 2 and test case 3 is incorrect)
-/*after copying the above logic i find correct answers the cases below i commented is incorrect because
-it is logic of test case 2 which is incorrect
-
-output : 
-
-Test Case 1: year = 2012: PASSED!
-Test Case 1: year = 2008: PASSED!
-Test Case 1: year = 2004: PASSED!
-
-*/
-  year = 2001;
-  printf("Test Case 2: year = %d: ", year);
+  
+  printf("Test Case 1 : ");
+  scanf("%d",&year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
@@ -65,35 +44,10 @@ Test Case 1: year = 2004: PASSED!
     printf("PASSED!\n");
     numPassed = numPassed + 1;
   }
-/*incorrect logic 
-
-output : 
- 
- Test Case 3: year = 4000: FAILED!
-Test Case 3: year = 6000: FAILED!
-Test Case 3: year = 8000: FAILED!
-
-
-*/
-
-
-
- /* year = 2100;
-  printf("Test Case 3: year = %d: ", year);
-  if(isLeapYear(year)) {
-    printf("FAILED!\n");
-    numFailed = numFailed + 1;
-  } else {
-    printf("PASSED!\n");
-    numPassed = numPassed + 1;
-  }
-
-  //TODO: write *at least* 3 more of your own
-  //      test cases here, they should all pass!
-
-
-  year = 4000;
-  printf("Test Case 3: year = %d: ", year);
+  
+  
+  printf("Test Case 2 : ");
+  scanf("%d",&year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
@@ -103,8 +57,19 @@ Test Case 3: year = 8000: FAILED!
   }
 
 
-  year = 6000;
-  printf("Test Case 3: year = %d: ", year);
+printf("Test Case 3 : ");
+  scanf("%d",&year);
+  if(isLeapYear(year)) {
+    printf("FAILED!\n");
+    numFailed = numFailed + 1;
+  } else {
+    printf("PASSED!\n");
+    numPassed = numPassed + 1;
+  }
+
+  
+  printf("Test Case 4 : ");
+  scanf("%d",&year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
@@ -114,48 +79,26 @@ Test Case 3: year = 8000: FAILED!
   }
 
 
-  year = 8000;
-  printf("Test Case 3: year = %d: ", year);
+printf("Test Case 5 : ");
+  scanf("%d",&year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
   } else {
     printf("PASSED!\n");
     numPassed = numPassed + 1;
-  }*/
+  }
 
 
-
-year = 2012;
-  printf("Test Case 4: year = %d: ", year);
-  if(!isLeapYear(year)) {
+printf("Test Case 6 : ");
+  scanf("%d",&year);
+  if(isLeapYear(year)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
   } else {
     printf("PASSED!\n");
     numPassed = numPassed + 1;
   }
-
-year = 2008;
-  printf("Test Case 5: year = %d: ", year);
-  if(!isLeapYear(year)) {
-    printf("FAILED!\n");
-    numFailed = numFailed + 1;
-  } else {
-    printf("PASSED!\n");
-    numPassed = numPassed + 1;
-  }
-
-year = 2004;
-  printf("Test Case 6: year = %d: ", year);
-  if(!isLeapYear(year)) {
-    printf("FAILED!\n");
-    numFailed = numFailed + 1;
-  } else {
-    printf("PASSED!\n");
-    numPassed = numPassed + 1;
-  }
-
 
 
   printf("\n\n");
@@ -172,15 +115,18 @@ year = 2004;
 }
 
 int isLeapYear(int year) {
-// give input in command line arguement
 
- if((year % 4==0 && year % 100 != 0 ) || (year % 400 == 0) ){
 
-  true(1);
+if((year % 4==0 && year % 100 != 0 ) || (year % 400 == 0) ){
+
+printf("\ntrue (1)\n\n");
+  
  }
  else{
-  false(0);
+ 
+ printf("\n false(0)\n\n");
  }
+ 
 
   //TODO: Write your logic here
   //      The year is stored in the variable year
