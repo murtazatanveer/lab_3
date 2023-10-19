@@ -63,7 +63,7 @@ int main(int argc, char **argv) {
   //      test cases here, they should all pass!
 
 
-  year = 2008;
+  year = 1800;
   printf("Test Case 3: year = %d: ", year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
@@ -74,7 +74,7 @@ int main(int argc, char **argv) {
   }
 
 
-  year = 2012;
+  year = 1700;
   printf("Test Case 3: year = %d: ", year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
@@ -85,7 +85,7 @@ int main(int argc, char **argv) {
   }
 
 
-  year = 2016;
+  year = 1600;
   printf("Test Case 3: year = %d: ", year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
@@ -95,7 +95,7 @@ int main(int argc, char **argv) {
     numPassed = numPassed + 1;
   }
 
-year = 2017;
+year = 1500;
 //year 2017 is not leap so this test fails.
   printf("Test Case 3: year = %d: ", year);
   if(isLeapYear(year)) {
