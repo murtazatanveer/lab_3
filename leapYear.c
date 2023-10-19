@@ -43,7 +43,7 @@ int main(int argc, char **argv) {
 /*after copying the above logic i find correct answers the cases below i commented is incorrect because
 it is logic of test case 2 which is incorrect
 
-output
+output : 
 
 Test Case 1: year = 2012: PASSED!
 Test Case 1: year = 2008: PASSED!
@@ -59,8 +59,20 @@ Test Case 1: year = 2004: PASSED!
     printf("PASSED!\n");
     numPassed = numPassed + 1;
   }
+/*incorrect logic 
 
-  year = 2100;
+output : 
+ 
+ Test Case 3: year = 4000: FAILED!
+Test Case 3: year = 6000: FAILED!
+Test Case 3: year = 8000: FAILED!
+
+
+*/
+
+
+
+ /* year = 2100;
   printf("Test Case 3: year = %d: ", year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
@@ -74,8 +86,8 @@ Test Case 1: year = 2004: PASSED!
   //      test cases here, they should all pass!
 
 
-  /*year = 4000;
-  printf("Test Case x: year = %d: ", year);
+  year = 4000;
+  printf("Test Case 3: year = %d: ", year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
@@ -86,7 +98,7 @@ Test Case 1: year = 2004: PASSED!
 
 
   year = 6000;
-  printf("Test Case y: year = %d: ", year);
+  printf("Test Case 3: year = %d: ", year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
@@ -97,17 +109,6 @@ Test Case 1: year = 2004: PASSED!
 
 
   year = 8000;
-  printf("Test Case z: year = %d: ", year);
-  if(isLeapYear(year)) {
-    printf("FAILED!\n");
-    numFailed = numFailed + 1;
-  } else {
-    printf("PASSED!\n");
-    numPassed = numPassed + 1;
-  }
-
-year = 10000;
-//year 2017 is not leap so this test fails.
   printf("Test Case 3: year = %d: ", year);
   if(isLeapYear(year)) {
     printf("FAILED!\n");
@@ -116,6 +117,8 @@ year = 10000;
     printf("PASSED!\n");
     numPassed = numPassed + 1;
   }*/
+
+
 
 year = 2012;
   printf("Test Case 4: year = %d: ", year);
