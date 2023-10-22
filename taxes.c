@@ -20,7 +20,9 @@ int main(int argc, char **argv) {
   double childCredit = 0.0;
   double totalTax = 0.0;
   double numChildren = 0;
-  double child_tax = 0;
+
+  double calculation;
+  
 
   printf("\nPlease enter your adjusted gross income (AGI): ");
   scanf("%lf", &agi);
@@ -34,32 +36,37 @@ int main(int argc, char **argv) {
 
     printf("\n\nHow many children do you have? : ");
     scanf("%d", &numChildren);
-   child_tax = numChildren *2000;
+   childCredit = numChildren *2000;
 
   }
 
-if(agi>0 && agi<19900  ){
+if(agi>0 && agi<=19900  ){
 
 // 10 percent of agi
 
   tax = (10*agi)/(100);
-  childCredit = child_tax;
-  totalTax = tax - (child_tax);
+  
+  totalTax = tax - (childCredit);
+
+ 
+}
+
+else if(agi>=19901 && agi<=81050){
+
+ calculation = (agi-19900);
+
+ tax = ((12*a)/100) + 1990;
+
+}
+
+
+
+  //TODO: compute the tax, child credit, and total tax here
 
  printf("AGI:          $%.2lf\n\n", agi);
   printf("Tax:          $%.2lf\n\n", tax);
   printf("Child Credit: $%.2lf\n\n", childCredit);
   printf("Total Tax:    $%.2f\n\n", totalTax);
-
-}
-
-
-  //TODO: compute the tax, child credit, and total tax here
-
-  printf("AGI:          $%10.2f\n\n", agi);
-  printf("Tax:          $%10.2f\n\n", tax);
-  printf("Child Credit: $%10.2f\n\n", childCredit);
-  printf("Total Tax:    $%10.2f\n\n", totalTax);
 
   return 0;
 }
