@@ -66,7 +66,25 @@ else if(agi>=81051 && agi<=172750){
 
  calculation = (agi-81050);
 
- tax = ((12*calculation)/100) + 9328;
+ tax = ((22*calculation)/100) + 9328;
+
+}
+
+
+else if(agi>=172751 && agi<=329850){
+
+ calculation = (agi-172750);
+
+ tax = ((24*calculation)/100) + 29502;
+
+}
+
+
+else if(agi>=19901 && agi<=81050){
+
+ calculation = (agi-19900);
+
+ tax = ((12*calculation)/100) + 1990;
 
 }
 
