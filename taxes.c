@@ -42,11 +42,12 @@ int main(int argc, char **argv) {
 
   }
 
-  childCredit = numChildren *2000;
+ 
 
 if(agi>0 && agi<=19900  ){
 
 // 10 percent of agi
+ childCredit = numChildren *2000;
 
   tax = (10*agi)/(100);
   
@@ -56,6 +57,8 @@ if(agi>0 && agi<=19900  ){
 }
 
 else if(agi>=19901 && agi<=81050){
+
+   childCredit = numChildren *2000;
 
  calculation = (agi-19900);
 
@@ -70,6 +73,8 @@ else if(agi>=19901 && agi<=81050){
 
 else if(agi>=81051 && agi<=172750){
 
+   childCredit = numChildren *2000;
+
  calculation = (agi-81050);
 
  tax = ((22*calculation)/100) + 9328;
@@ -80,6 +85,8 @@ else if(agi>=81051 && agi<=172750){
 
 else if(agi>=172751 && agi<=329850){
 
+   childCredit = numChildren *2000;
+
  calculation = (agi-172750);
 
  tax = ((24*calculation)/100) + 29502;
@@ -89,6 +96,8 @@ else if(agi>=172751 && agi<=329850){
 
 
 else if(agi>=329851 && agi<=418850){
+
+   childCredit = numChildren *2000;
 
  calculation = (agi-329850);
 
@@ -101,6 +110,8 @@ else if(agi>=329851 && agi<=418850){
 
 else if(agi>=418851 && agi<=628300){
 
+   childCredit = numChildren *2000;
+
  calculation = (agi-418850);
 
  tax = ((35*calculation)/100) + 95686;
@@ -110,6 +121,8 @@ else if(agi>=418851 && agi<=628300){
 }
 
 else if(agi>=628301){
+
+   childCredit = numChildren *2000;
 
  calculation = (agi-628300);
 
