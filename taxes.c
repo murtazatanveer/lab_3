@@ -38,9 +38,11 @@ int main(int argc, char **argv) {
 
     printf("\n\nHow many children do you have? : ");
     scanf("%d", &numChildren);
-   childCredit = numChildren *2000;
+   
 
   }
+
+  childCredit = numChildren *2000;
 
 if(agi>0 && agi<=19900  ){
 
