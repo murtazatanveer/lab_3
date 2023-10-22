@@ -55,10 +55,20 @@ else if(agi>=19901 && agi<=81050){
 
  calculation = (agi-19900);
 
- tax = ((12*a)/100) + 1990;
+ tax = ((12*calculation)/100) + 1990;
 
 }
 
+// i copy the above else if condition
+
+
+else if(agi>=81051 && agi<=172750){
+
+ calculation = (agi-81050);
+
+ tax = ((12*calculation)/100) + 9328;
+
+}
 
 
   //TODO: compute the tax, child credit, and total tax here
