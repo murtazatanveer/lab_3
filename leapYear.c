@@ -37,67 +37,74 @@ int main(int argc, char **argv) {
   
   printf("Test Case 1 : ");
   scanf("%d",&year);
-  if(isLeapYear(year)) {
-    printf("FAILED!\n");
-    numFailed = numFailed + 1;
-  } else {
+  if((year % 4==0 && year % 100 != 0 ) || (year % 400 == 0) ) {
     printf("PASSED!\n");
     numPassed = numPassed + 1;
+  } else {
+    printf("FAILED!\n");
+    
+    numFailed = numFailed + 1;
   }
   
   
   printf("Test Case 2 : ");
   scanf("%d",&year);
-  if(isLeapYear(year)) {
-    printf("FAILED!\n");
-    numFailed = numFailed + 1;
-  } else {
-    printf("PASSED!\n");
+  if((year % 4==0 && year % 100 != 0 ) || (year % 400 == 0) ) {
+    printf("PASED!\n");
     numPassed = numPassed + 1;
+  } else {
+    printf("FAILED!\n");
+    
+    numFailed = numFailed + 1;
   }
 
 
 printf("Test Case 3 : ");
   scanf("%d",&year);
-  if(isLeapYear(year)) {
-    printf("FAILED!\n");
-    numFailed = numFailed + 1;
-  } else {
-    printf("PASSED!\n");
+  if((year % 4==0 && year % 100 != 0 ) || (year % 400 == 0) ) {
+    printf("PASSED\n");
     numPassed = numPassed + 1;
+  } else {
+    printf("FAILED!\n");
+    
+    numFailed = numFailed + 1;
   }
 
   
   printf("Test Case 4 : ");
   scanf("%d",&year);
-  if(isLeapYear(year)) {
+  if((year % 4==0 && year % 100 != 0 ) || (year % 400 == 0) ) {
+    printf("PASED!\n");
+    
+    numPassed = numPassed + 1;
+  } else {
     printf("FAILED!\n");
     numFailed = numFailed + 1;
-  } else {
-    printf("PASSED!\n");
-    numPassed = numPassed + 1;
   }
 
 
 printf("Test Case 5 : ");
   scanf("%d",&year);
-  if(isLeapYear(year)) {
-    printf("FAILED!\n");
-    numFailed = numFailed + 1;
-  } else {
+  if((year % 4==0 && year % 100 != 0 ) || (year % 400 == 0) ) {
     printf("PASSED!\n");
     numPassed = numPassed + 1;
+  } else {
+    printf("FAILED\n");
+    
+
+    numFailed = numFailed + 1;
   }
 
 
 printf("Test Case 6 : ");
   scanf("%d",&year);
-  if(isLeapYear(year)) {
-    printf("FAILED!\n");
-    numFailed = numFailed + 1;
-  } else {
+  if((year % 4==0 && year % 100 != 0 ) || (year % 400 == 0) ) {
     printf("PASSED!\n");
-    numPassed = numPassed + 1;
+      numPassed = numPassed + 1;
+  } else {
+    printf("FAILED!\n");
+  
+    numFailed = numFailed + 1;
   }
 
 
