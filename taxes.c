@@ -80,13 +80,15 @@ else if(agi>=172751 && agi<=329850){
 }
 
 
-else if(agi>=19901 && agi<=81050){
+else if(agi>=329851 && agi<=418850){
 
- calculation = (agi-19900);
+ calculation = (agi-329850);
 
- tax = ((12*calculation)/100) + 1990;
+ tax = ((32*calculation)/100) + 67206;
 
 }
+
+
 
 
   //TODO: compute the tax, child credit, and total tax here
